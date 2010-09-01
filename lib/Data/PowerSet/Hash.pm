@@ -1,7 +1,7 @@
 use strictures 1;
 package Data::PowerSet::Hash;
 BEGIN {
-  $Data::PowerSet::Hash::VERSION = '0.01';
+  $Data::PowerSet::Hash::VERSION = '0.02';
 }
 # ABSTRACT: Power sets of hashes
 
@@ -39,7 +39,7 @@ Data::PowerSet::Hash - Power sets of hashes
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 DESCRIPTION
 

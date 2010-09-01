@@ -2,7 +2,7 @@ NAME
     Data::PowerSet::Hash - Power sets of hashes
 
 VERSION
-    version 0.01
+    version 0.02
 
 DESCRIPTION
     This provides you with a power set (basically all combinational

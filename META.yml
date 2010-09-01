@@ -23,4 +23,6 @@ requires:
   indirect: 0
   parent: 0
   strictures: 1
-version: 0.01
+resources:
+  repository: http://github.com/xsawyerx/data-powerset-hash
+version: 0.02

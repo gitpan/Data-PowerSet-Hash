@@ -21,7 +21,7 @@ my %module_build_args = (
     'Sawyer X <xsawyerx@cpan.org>'
   ],
   'dist_name' => 'Data-PowerSet-Hash',
-  'dist_version' => '0.01',
+  'dist_version' => '0.02',
   'license' => 'perl',
   'module_name' => 'Data::PowerSet::Hash',
   'recommends' => {},
