@@ -4,37 +4,38 @@ use warnings;
 
 
 
-use ExtUtils::MakeMaker 6.31;
+use ExtUtils::MakeMaker 6.30;
 
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'Power sets of hashes',
-  'AUTHOR' => 'Sawyer X <xsawyerx@cpan.org>',
-  'BUILD_REQUIRES' => {
-    'File::Find' => '0',
-    'File::Temp' => '0',
-    'Module::Build' => '0.3601',
-    'Test::More' => '0'
+  "ABSTRACT" => "Power sets of hashes",
+  "AUTHOR" => "Sawyer X <xsawyerx\@cpan.org>",
+  "BUILD_REQUIRES" => {
+    "File::Find" => 0,
+    "File::Temp" => 0,
+    "Module::Build" => "0.3601",
+    "Test::Deep::NoTest" => 0,
+    "Test::More" => 0
   },
-  'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.31',
-    'Module::Build' => '0.3601'
+  "CONFIGURE_REQUIRES" => {
+    "ExtUtils::MakeMaker" => "6.30",
+    "Module::Build" => "0.3601"
   },
-  'DISTNAME' => 'Data-PowerSet-Hash',
-  'EXE_FILES' => [],
-  'LICENSE' => 'perl',
-  'NAME' => 'Data::PowerSet::Hash',
-  'PREREQ_PM' => {
-    'Data::PowerSet' => '0',
-    'Exporter' => '0',
-    'indirect' => '0',
-    'parent' => '0',
-    'strictures' => '1'
+  "DISTNAME" => "Data-PowerSet-Hash",
+  "EXE_FILES" => [],
+  "LICENSE" => "perl",
+  "NAME" => "Data::PowerSet::Hash",
+  "PREREQ_PM" => {
+    "Data::PowerSet" => 0,
+    "Exporter" => 0,
+    "parent" => 0,
+    "strict" => 0,
+    "warnings" => 0
   },
-  'VERSION' => '0.02',
-  'test' => {
-    'TESTS' => 't/*.t'
+  "VERSION" => "0.03",
+  "test" => {
+    "TESTS" => "t/*.t"
   }
 );
 

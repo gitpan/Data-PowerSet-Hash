@@ -6,12 +6,13 @@ build_requires:
   File::Find: 0
   File::Temp: 0
   Module::Build: 0.3601
+  Test::Deep::NoTest: 0
   Test::More: 0
 configure_requires:
-  ExtUtils::MakeMaker: 6.31
+  ExtUtils::MakeMaker: 6.30
   Module::Build: 0.3601
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.102340, CPAN::Meta::Converter version 2.101591'
+generated_by: 'Dist::Zilla version 4.300020, CPAN::Meta::Converter version 2.120921'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -20,9 +21,9 @@ name: Data-PowerSet-Hash
 requires:
   Data::PowerSet: 0
   Exporter: 0
-  indirect: 0
   parent: 0
-  strictures: 1
+  strict: 0
+  warnings: 0
 resources:
-  repository: http://github.com/xsawyerx/data-powerset-hash
-version: 0.02
+  repository: git://github.com/xsawyerx/data-powerset-hash.git
+version: 0.03

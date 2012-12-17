@@ -1,10 +1,11 @@
-use strictures 1;
 package Data::PowerSet::Hash;
-BEGIN {
-  $Data::PowerSet::Hash::VERSION = '0.02';
+{
+  $Data::PowerSet::Hash::VERSION = '0.03';
 }
 # ABSTRACT: Power sets of hashes
 
+use strict;
+use warnings;
 use parent 'Exporter';
 use Data::PowerSet 'powerset';
 
@@ -39,7 +40,7 @@ Data::PowerSet::Hash - Power sets of hashes
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 DESCRIPTION
 
@@ -82,11 +83,11 @@ For arrays, you should check out L<Data::PowerSet> or L<List::PowerSet>.
 
 =head1 AUTHOR
 
-  Sawyer X <xsawyerx@cpan.org>
+Sawyer X <xsawyerx@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2010 by Sawyer X.
+This software is copyright (c) 2012 by Sawyer X.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
