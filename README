@@ -2,7 +2,7 @@ NAME
     Data::PowerSet::Hash - Power sets of hashes
 
 VERSION
-    version 0.03
+    version 0.04
 
 DESCRIPTION
     This provides you with a power set (basically all combinational
@@ -38,11 +38,13 @@ SUBROUTINES/METHODS
 SEE ALSO
     For arrays, you should check out Data::PowerSet or List::PowerSet.
 
-AUTHOR
-    Sawyer X <xsawyerx@cpan.org>
+AUTHORS
+    *   Sawyer X <xsawyerx@cpan.org>
+
+    *   Mirela Iclodean <imirela@cpan.org>
 
 COPYRIGHT AND LICENSE
-    This software is copyright (c) 2012 by Sawyer X.
+    This software is copyright (c) 2013 by Sawyer X.
 
     This is free software; you can redistribute it and/or modify it under
     the same terms as the Perl 5 programming language system itself.

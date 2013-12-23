@@ -1,6 +1,6 @@
 package Data::PowerSet::Hash;
 {
-  $Data::PowerSet::Hash::VERSION = '0.03';
+  $Data::PowerSet::Hash::VERSION = '0.04';
 }
 # ABSTRACT: Power sets of hashes
 
@@ -17,12 +17,9 @@ sub hash_powerset {
     my $pset = powerset( keys %hash );
 
     foreach my $combo ( @{$pset} ) {
-        my %tmp_hash = ();
-        foreach my $key ( @{$combo} ) {
-            $tmp_hash{$key} = $hash{$key};
-        }
-
-        push @pset, \%tmp_hash;
+        push @pset, {
+            map +( $_ => $hash{$_} ), @{$combo}
+        };
     }
 
     return @pset;
@@ -30,7 +27,7 @@ sub hash_powerset {
 
 1;
 
-
+__END__
 
 =pod
 
@@ -40,7 +37,7 @@ Data::PowerSet::Hash - Power sets of hashes
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 DESCRIPTION
 
@@ -81,19 +78,25 @@ See documentation for it above.
 
 For arrays, you should check out L<Data::PowerSet> or L<List::PowerSet>.
 
-=head1 AUTHOR
+=head1 AUTHORS
+
+=over 4
+
+=item *
 
 Sawyer X <xsawyerx@cpan.org>
 
+=item *
+
+Mirela Iclodean <imirela@cpan.org>
+
+=back
+
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2012 by Sawyer X.
+This software is copyright (c) 2013 by Sawyer X.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
-
-__END__
-
